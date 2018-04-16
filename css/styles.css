@@ -173,18 +173,27 @@ span.mdl-chip__contact {
     float: left;
 }
 
-@media(min-width:600px) and (max-width:1279px) {
+@media(min-width:600px) and (max-width:1297px) {
 
     .salesStats {
         clear: both;
         /*    padding-top:1%;*/
     }
+    
+    .salesTitles h6, .salesTitles h4{
+        float: left;
+        width:100%;
+    }
+    
 
 }
 
 @media(min-width: 500px) and (max-width:599px){
     .movie button{
         width:100%;
+    }
+    .salesTitles h6, .salesTitles h4{
+        float:left;
     }
 }
 @media(min-width:320px) and (max-width:499px) {
