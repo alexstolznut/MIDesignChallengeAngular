@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel='stylesheet' href='mprogress.min.css' />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <script src='mprogress.min.js'></script>
+</head>
+
+<body>
+    <main class="mdl-layout__content">
+        <div class="stats mdl-grid">
+            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--16dp">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--7-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone">
+                        <h2>Total Movie Sales</h2>
+                        <h4>Movie 1 vs Movie 2</h4>
+                        <canvas id="myChart"></canvas></div>
+                    <div class="sales mdl-cell  mdl-cell--5-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone">
+                        <div class="salesTitles">
+                            <h6>Average number of sales in the past month in: <span>United States</span></h6>
+                            <h4><span>All sales: 162,884</span></h4>
+                        </div>
+                        <div class="salesStats">
+                            <h3>2,346</h3>
+                            <h6>Total orders - Movie 1</h6>
+                            <span class="mdl-chip mdl-chip--contact">
+                                <span class="mdl-chip__contact mdl-color--grey"></span>
+                            </span>
+
+                            <h3>2,346</h3>
+                            <h6>Total orders - Movie 1</h6>
+                            <span class="mdl-chip mdl-chip--contact">
+                                <span class="mdl-chip__contact mdl-color--teal"></span>
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="analysis mdl-cell mdl-cell--8-col-desktop mdl-cell--12-col-phone">
+                        <h6><span>Analysis of sales:</span> The value has changed over the time, and last month reached a level over $50,000</h6>
+                    </div>
+                    <div class="update mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col-phone"><span><i class="material-icons">update</i><h6> Update of on 16.07.2015</h6></span></div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="movie mdl-grid">
+            <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                <div class="movieCard mdl-card mdl-shadow--8dp mdl-cell mdl-cell--12-col">
+                    <div class="movieOneRow mdl-grid">
+                    <div class=" mdl-cell mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
+                        <h1>Movie 1</h1>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col-tablet mdl-cell--6-col-desktop">
+                        <h4>May 3 2015</h4>
+                    </div>
+                    <div class="mdl-cell mdl-cell-4-col-tablet mdl-cell--6-col-desktop">
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Buy Tickets</button>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col-tablet mdl-cell--6-col-desktop">
+                        <h4>May 4 2015</h4>
+                    </div>
+                    <div class="mdl-cell mdl-cell-4-col-tablet mdl-cell--6-col-desktop">
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Buy Tickets</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+              <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                <div class="movieCard mdl-card mdl-shadow--8dp mdl-cell mdl-cell--12-col">
+                    <div class="movieOneRow mdl-grid">
+                    <div class=" mdl-cell mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
+                        <h1>Movie 1</h1>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col-tablet mdl-cell--6-col-desktop">
+                        <h4>May 3 2015</h4>
+                    </div>
+                    <div class="mdl-cell mdl-cell-4-col-tablet mdl-cell--6-col-desktop">
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Buy Tickets</button>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col-tablet mdl-cell--6-col-desktop">
+                        <h4>May 4 2015</h4>
+                    </div>
+                    <div class="mdl-cell mdl-cell-4-col-tablet mdl-cell--6-col-desktop">
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Buy Tickets</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script type=text/javascript>
+        var mprogress3 = new Mprogress({
+            template: 3,
+
+            parent: '#demoIn'
+
+        });
+    </script>
+    <script language="javascript">
+        //        //        document.querySelector('#progressbar1').addEventListener('mdl-componentupgraded',
+        //        //            function() {
+        //        //                this.MaterialProgress.setProgress(44);
+        //        //                this.
+        //        //            });
+        //        document.querySelector('#progressbar3').addEventListener('mdl-componentupgraded',
+        //            function() {
+        //                this.MaterialProgress.setProgress(33);
+        //                this.MaterialProgress.setBuffer(87);
+        //            });
+    </script>
+</body>
+
+
+</html>
