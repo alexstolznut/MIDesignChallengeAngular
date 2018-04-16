@@ -1,6 +1,9 @@
 body {
     margin: 0 auto !important;
 }
+main{
+    position: relative;
+}
 
 .stats {
     min-height: 300px;
@@ -173,6 +176,11 @@ span.mdl-chip__contact {
     float: left;
 }
 
+.thankYou{
+    display:block;
+    margin:0 auto;
+    position:absolute;
+}
 @media(min-width:600px) and (max-width:1297px) {
 
     .salesStats {
