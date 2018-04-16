@@ -46,15 +46,17 @@ function appendChart() {
 appendChart();
 
 var dialog = document.querySelector('dialog');
-var showDialogButton = document.querySelector('button');
+var showDialogButton = document.getElementsByTagName('button');
 var purchaseDialog = document.getElementsByClassName('thanks');
-
+window.console.log(showDialogButton.length);
 if (!dialog.showModal) {
     dialogPolyfill.registerDialog(dialog);
 }
-showDialogButton.addEventListener('click', function () {
+for(var i = 0; i < showDialogButton.length; i = i +1) {
+showDialogButton[i].addEventListener('click', function () {
     dialog.showModal();
 });
+}
 dialog.querySelector('.close').addEventListener('click', function () {
     dialog.close();
 });
