@@ -98,42 +98,7 @@
             </div>
 
         </div>
-        <dialog class="mdl-dialog" id="delete_alias_confirm_dialog">
-            <h4 class="mdl-dialog__title">
-                Delete alias
-            </h4>
-            <div class="mdl-dialog__content" id="delete_alias_confirm_dialog_content">
-                <p>
-                    Alias [ALIAS NAME] has been successfully deleted.
-                </p>
-                <form action="#">
-                    <div class="mdl-dialog__actions">
-                        <button type="button" class="mdl-button mdl-button--raised mdl-button--colored" onClick="delete_alias_confirm_dialog.close()" id="delete_alias_confirm_dialog_ok_button">OK</button>
-                    </div>
-                </form>
-            </div>
-        </dialog>
 
-        <script>
-            var delete_alias_confirm_dialog = document.querySelector('#delete_alias_confirm_dialog');
-
-            if (!delete_alias_confirm_dialog.showModal) {
-                dialogPolyfill.registerDialog(delete_alias_confirm_dialog);
-            }
-
-            var delete_alias_curr_name = ""
-
-            function show_delete_alias_confirmation(clicked_element) {
-                delete_alias_curr_name = ((clicked_element.parentNode).parentNode).parentNode.parentNode.querySelector('#alias_name').innerText
-                var delete_alias_dialog_delete_button = document.querySelector('#delete_alias_dialog_delete_button');
-                var delete_alias_dialog_alias_name = document.querySelector('#delete_alias_dialog_alias_name');
-                delete_alias_dialog_alias_name.innerHTML = delete_alias_curr_name
-                delete_alias_dialog.showModal();
-                delete_alias_dialog_delete_button.blur();
-            }
-        </script>
-
-        <!--
         <dialog class="mdl-dialog">
             <section id="oneBefore">
                 <h6 class="mdl-dialog__title">Movie 1 05/03/2015</h6>
@@ -188,7 +153,6 @@
                 </div>
             </section>
         </dialog>
--->
 
 
 
