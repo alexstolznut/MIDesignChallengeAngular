@@ -71,6 +71,7 @@ appendChart();
 
 function secondModal() {
     one.setAttribute("class", "slideOut");
+    dialog.
     setTimeout(function () {
         one.style.display = "none";
         two.querySelector("h6").setAttribute("class", "twoAfter");
