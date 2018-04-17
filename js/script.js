@@ -70,24 +70,17 @@ appendChart();
 //}
 
 function secondModal() {
+    "use strict";
     one.setAttribute("class", "slideOut");
-    dialog.
     setTimeout(function () {
         one.style.display = "none";
-        two.querySelector("h6").setAttribute("class", "twoAfter");
-
-        twoConts.setAttribute("class", "twoContentsAfter");
         two.style.display = "block";
         twoConts.style.display = "block";
-    }, 2000);
+    }, 1000);
 
-    //    setTimeout(function(){
-    //        twoConts.style.display = "block";
-    //    },4000)
-    //    
+    two.querySelector("h6").setAttribute("class", "twoAfter");
 
-
-    //    two.style.display = "block";
+    twoConts.setAttribute("class", "twoContentsAfter");
 
 
 }
