@@ -1,7 +1,8 @@
 body {
     margin: 0 auto !important;
 }
-main{
+
+main {
     position: relative;
 }
 
@@ -160,14 +161,17 @@ span.mdl-chip__contact {
     clear:both;
 }
 */
-.movieCard{
-    min-width:300px !important;
-    margin:0 auto;
+
+.movieCard {
+    min-width: 300px !important;
+    margin: 0 auto;
 }
-.movie .mdl-card{
-/*    width:450px;*/
-    min-height:300px;
+
+.movie .mdl-card {
+    /*    width:450px;*/
+    min-height: 300px;
 }
+
 .movie h4,
 .movie button {
     margin: 0 auto;
@@ -176,52 +180,174 @@ span.mdl-chip__contact {
     float: left;
 }
 
-.thankYou{
-    display:block;
-    margin:0 auto;
-    position:absolute;
+.thankYou {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
 }
+
+dialog {
+    overflow: hidden;
+    height: auto;
+    text-align: center;
+}
+
+img{
+    display: block;
+    width:100px;
+    height:100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slideOut {
+
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    margin-left: 120% !important;
+
+}
+
+#twoBefore, #twoContentsBefore {
+    display: none;
+}
+
+.twoContentsAfter{
+    animation: dollarDown;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+/*    animation-delay: 2s;*/
+    animation-fill-mode: forwards;
+}
+.twoAfter {
+    display: block;
+    animation: slideDown;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+/*    animation-delay: 2s;*/
+    animation-fill-mode: forwards;
+
+}
+
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(-200px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    10% {
+        transform: translateY(-75%)
+    }
+    20% {
+        transform: translateY(-50%);
+    }
+    30% {
+        transform: translateY(-25%);
+    }
+    40% {
+        transform: translateY(-20%);
+    }
+    45% {
+        transform: translateY(-10%)
+    }
+    50% {
+        transform: translateY(-5%);
+    }
+    55% {
+        transform: translateY(0%);
+    }
+    60% {
+        transform: translateY(5%)
+    }
+    70% {
+        transform: translateY(0%);
+    }
+    80% {
+        transform: translateY(5%);
+    }
+    90% {
+        transform: translateY(2%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes dollarDown{
+    0%{
+        transform: translateY(-50%);
+        
+    }
+    
+    50%{
+        transform: translateY(10%);
+    }
+    75%{
+        transform: translateY(5%);
+    }
+    100%{
+        transform: translateY(10%);
+    }
+    
+}
+
 @media(min-width:600px) and (max-width:1297px) {
 
     .salesStats {
         clear: both;
         /*    padding-top:1%;*/
     }
-    
-    .salesTitles h6, .salesTitles h4{
+
+    .salesTitles h6,
+    .salesTitles h4 {
         float: left;
-        width:100%;
+        width: 100%;
     }
-    
+
 
 }
 
-@media(min-width: 500px) and (max-width:599px){
-    .movie button{
-        width:100%;
+@media(min-width: 500px) and (max-width:599px) {
+    .movie button {
+        width: 100%;
     }
-    .salesTitles h6, .salesTitles h4{
-        float:left;
+    .salesTitles h6,
+    .salesTitles h4 {
+        float: left;
     }
 }
+
 @media(min-width:320px) and (max-width:499px) {
 
     .update i,
     .update h6 {
         float: left;
     }
-    .salesTitles h4{
-        float:left;
+    .salesTitles h4 {
+        float: left;
     }
-    
-    
-    .movie h4, .movie button{
-        padding-bottom:0%;
+
+
+    .movie h4,
+    .movie button {
+        padding-bottom: 0%;
     }
-    
-    .movie button{
-        width:60%;
-        height:50px;
+
+    .movie button {
+        width: 60%;
+        height: 50px;
     }
 
 }
