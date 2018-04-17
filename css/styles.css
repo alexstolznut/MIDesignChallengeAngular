@@ -349,5 +349,9 @@ img{
         width: 60%;
         height: 50px;
     }
+    
+    dialog{
+        display: none;
+    }
 
 }
