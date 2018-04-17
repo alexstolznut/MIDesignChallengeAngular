@@ -87,6 +87,10 @@ function secondModal() {
 
 function resetModal() {
     one.removeAttribute("class", "slideOut");
+    two.style.display = "none";
+    twoConts.style.display = "none";
+    two.querySelector("h6").removeAttribute("class", "twoAfter");
+    twoConts.removeAttribute("class", "twoContentsAfter");
 }
 
 
