@@ -8,20 +8,22 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ng-dialog/1.4.0/css/ngDialog-theme-default.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.4.9/dialog-polyfill.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
 </head>
 
-<body>
-    <main class="mdl-layout__content">
+<body ng-app="dataDashApp">
+    <main class="mdl-layout__content" ng-controller="dataDashController" ng-cloak>
         <div class="stats mdl-grid">
             <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--16dp">
                 <div class="mdl-grid">
                     <div class="mdl-cell mdl-cell--7-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone">
+                      
                         <h2>Total Movie Sales</h2>
-                        <h4>Movie 1 vs Movie 2</h4>
+                        <h4>{{movies[0].title}} vs {{movies[1].title}}</h4>
                         <canvas id="myChart"></canvas></div>
                     <div class="sales mdl-cell  mdl-cell--5-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone">
                         <div class="salesTitles">
@@ -29,16 +31,16 @@
                             <h4><span>All sales: 162,884</span></h4>
                         </div>
                         <div class="salesStats">
-                            <h3>2,346</h3>
-                            <h6>Total orders - Movie 1</h6>
+                            <h3 >{{movies[0].weekSales}}</h3>
+                            <h6>Total orders - {{movies[0].title}}</h6>
                             <span class="mdl-chip mdl-chip--contact">
-                                <span class="mdl-chip__contact mdl-color--grey"></span>
+                                <span class="movie1Bar mdl-chip__contact mdl-color--grey"></span>
                             </span>
 
-                            <h3>2,346</h3>
-                            <h6>Total orders - Movie 1</h6>
+                            <h3>{{movies[1].weekSales}}</h3>
+                            <h6>Total orders - {{movies[1].title}}</h6>
                             <span class="mdl-chip mdl-chip--contact">
-                                <span class="mdl-chip__contact mdl-color--teal"></span>
+                                <span class="movie2Bar mdl-chip__contact mdl-color--teal"></span>
                             </span>
                         </div>
 
@@ -55,44 +57,23 @@
 
 
         <div class="movie mdl-grid">
-            <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+            <div ng-repeat="movie in movies" class="mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
                 <div class="movieCard mdl-card mdl-shadow--8dp mdl-cell mdl-cell--12-col">
                     <div class="movieOneRow mdl-grid">
                         <div class=" mdl-cell mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
-                            <h1>Movie 1</h1>
+                            <h1>{{ movie.title}}</h1>
                         </div>
                         <div class="mdl-cell mdl-cell--4-col-tablet mdl-cell--6-col-desktop">
-                            <h4>May 3 2015</h4>
+                            <h4>{{ movie.date1 | date }}</h4>
                         </div>
                         <div class="mdl-cell mdl-cell-4-col-tablet mdl-cell--6-col-desktop">
-                            <button class="mdl-button mdl-button--raised mdl-js-button dialog-button mdl-button--colored" id="movie1">Buy Tickets</button>
+                            <button class="mdl-button mdl-button--raised mdl-js-button dialog-button mdl-button--colored" id="movie">Buy Tickets</button>
                         </div>
                         <div class="mdl-cell mdl-cell--4-col-tablet mdl-cell--6-col-desktop">
-                            <h4>May 4 2015</h4>
+                            <h4>{{ movie.date2 | date }}</h4>
                         </div>
                         <div class="mdl-cell mdl-cell-4-col-tablet mdl-cell--6-col-desktop">
-                            <button class="mdl-button mdl-button--raised mdl-js-button dialog-button mdl-button--colored" id="movie1">Buy Tickets</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
-                <div class="movieCard mdl-card mdl-shadow--8dp mdl-cell mdl-cell--12-col">
-                    <div class="movieOneRow mdl-grid">
-                        <div class=" mdl-cell mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
-                            <h1>Movie 2</h1>
-                        </div>
-                        <div class="mdl-cell mdl-cell--4-col-tablet mdl-cell--6-col-desktop">
-                            <h4>May 3 2015</h4>
-                        </div>
-                        <div class="mdl-cell mdl-cell-4-col-tablet mdl-cell--6-col-desktop">
-                            <button class="mdl-button mdl-button--raised mdl-js-button dialog-button mdl-button--colored" id="movie2">Buy Tickets</button>
-                        </div>
-                        <div class="mdl-cell mdl-cell--4-col-tablet mdl-cell--6-col-desktop">
-                            <h4>May 4 2015</h4>
-                        </div>
-                        <div class="mdl-cell mdl-cell-4-col-tablet mdl-cell--6-col-desktop">
-                            <button class="mdl-button mdl-button--raised mdl-js-button dialog-button mdl-button--colored" id="movie2">Buy Tickets</button>
+                            <button class="mdl-button mdl-button--raised mdl-js-button dialog-button mdl-button--colored" id="movie">Buy Tickets</button>
                         </div>
                     </div>
                 </div>
@@ -102,22 +83,22 @@
 
         <dialog class="mdl-dialog">
             <section id="oneBefore">
-                <h6 class="mdl-dialog__title">Movie 1 05/03/2015</h6>
+                <h6 class="mdl-dialog__title">Movie</h6>
                 <div class="mdl-dialog__content">
 
-                    <form action="#">
-                        <div class="mdl-textfield mdl-js-textfield mdl-cell mdl-cell--6-col">
-                            <input class="mdl-textfield__input" type="text" id="name" pattern="[A-Z, a-z, ]*" required>
-                            <label class="mdl-textfield__label" for="name">First Name</label>
+                    <form action="#" name="">
+                        <div class="mdl-textfield mdl-js-textfield mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" id="firstName" ng-model="myText" pattern="[A-Z, a-z, ]*" required>
+                            <label class="mdl-textfield__label" for="firstName">First Name</label>
                             <span class="mdl-textfield__error">Please enter a valid name</span>
                         </div>
-                        <div class="mdl-textfield mdl-js-textfield mdl-cell--6-col">
-                            <input class="mdl-textfield__input" type="text" id="name" pattern="[A-Z, a-z, ]*" required>
-                            <label class="mdl-textfield__label" for="name">Last Name</label>
+                        <div class="mdl-textfield mdl-js-textfield mdl-cell--6-col mdl-cell--12-col-tablet mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" id="lastName" pattern="[A-Z, a-z, ]*" required>
+                            <label class="mdl-textfield__label" for="lastName">Last Name</label>
                             <span class="mdl-textfield__error">Please enter a valid name</span>
                         </div>
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input class="mdl-textfield__input" type="text" id="numberTickets" pattern="[0-9]{2}" required>
+                            <input class="mdl-textfield__input" type="text" id="numberTickets" pattern="[0-9]{1,2}" required>
                             <label class="mdl-textfield__label" for="numberTickets">Number of tickets</label>
                             <span class="mdl-textfield__error">Please enter a number between 1 and 99</span>
                         </div>
@@ -131,16 +112,19 @@
                             <label class="mdl-textfield__label" for="credit">Expiration Date</label>
                             <span class="mdl-textfield__error">Please enter a valid credit card number</span>
                         </div>
-                    </form>
+                        
+    
+    </form>
+                  
 
                 </div>
                 <div class="mdl-dialog__actions">
-                    <button type="button" class="agree mdl-button" id="agree1">Submit</button>
+                    <button type="button" class="agree mdl-button" id="agree1" ng-disabled="{{salesForm.$invalid}}">Submit</button>
                     <button type="button" class="close mdl-button" id="close1">Cancel</button>
                 </div>
             </section>
             <section id="twoBefore">
-                <h6 class="mdl-dialog__title">Movie 1 05/03/2015</h6>
+                <h6 class="mdl-dialog__title"></h6>
                 <div class="mdl-dialog__content" id="twoContentsBefore">
                     <img src="img/download.png">
                     <p>Thank your for your purchase {{firstName}}</p>
@@ -161,9 +145,11 @@
     </main>
     
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
     <script src="js/script.js"></script>
+    
 </body>
 
 

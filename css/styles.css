@@ -82,12 +82,7 @@ canvas {
     clear: both;
 }
 
-/*
-#progressbar1, .mdl-progress, .mdl-js-progress{
-    height:20px;
-    border-radius: 30% !important;
-}
-*/
+
 
 .mdl-chip {
     /*    display: inline-block;*/
@@ -96,7 +91,16 @@ canvas {
     height: 16px !important;
 }
 
-span.mdl-chip__contact {
+span.mdl-chip__contact.movie1Bar {
+    width: 10%;
+    padding: 0% !important;
+    margin: 0 !important;
+    height: inherit;
+    vertical-align: baseline;
+
+}
+
+span.mdl-chip__contact.movie2Bar {
     width: 45%;
     padding: 0% !important;
     margin: 0 !important;
@@ -233,6 +237,13 @@ img{
 
 }
 
+dialog form div {
+    padding-bottom: 15% !important;
+}
+dialog form label {
+    font-size: 1.2em !important;
+}
+
 
 @keyframes slideOut {
     0% {
@@ -316,6 +327,8 @@ img{
         width: 100%;
     }
 
+    
+
 
 }
 
@@ -350,10 +363,9 @@ img{
         height: 50px;
     }
     
-/*
-    dialog{
-        display: none;
+    canvas{
+        height: 250px !important;
     }
-*/
+    
 
 }
