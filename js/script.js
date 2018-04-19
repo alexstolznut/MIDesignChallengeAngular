@@ -29,7 +29,7 @@ var $ = function (id) {
             title: "Movie 2",
             date1: "May 3 2015",
             date2: "May 4 2015",
-            weekSales: "4,4422"
+            weekSales: "4,422"
       }]
 
 
