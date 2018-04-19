@@ -95,7 +95,7 @@ function secondModal() {
         one.style.display = "none";
         two.style.display = "block";
         twoConts.style.display = "block";
-    }, 400);
+    }, 300);
 
     two.querySelector("h6").setAttribute("class", "twoAfter");
 

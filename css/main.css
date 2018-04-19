@@ -1,0 +1,233 @@
+body {
+  margin: 0 auto; }
+
+.stats {
+  min-height: 300px; }
+  .stats h2, .stats h4 {
+    color: grey; }
+
+canvas {
+  width: 100% !important;
+  height: 275px !important; }
+
+.salesTitles {
+  width: 100%; }
+  .salesTitles h4 {
+    padding-top: 0% !important;
+    margin-top: 0% !important;
+    float: right;
+    font-weight: 400 !important;
+    color: grey; }
+  .salesTitles h6 {
+    padding: 0% !important;
+    margin: 0% !important;
+    float: right;
+    color: grey; }
+    .salesTitles h6 span {
+      font-weight: bold;
+      color: black;
+      opacity: 0.6;
+      padding: 0% !important;
+      margin: 0% !important; }
+
+.salesStats {
+  clear: both;
+  padding-top: 5%; }
+  .salesStats h3 {
+    font-weight: 300;
+    color: grey;
+    line-height: 1em;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin: 0%; }
+    .salesStats h3:nth-of-type(2) {
+      margin-top: 15% !important; }
+  .salesStats h6 {
+    padding: 0%;
+    margin: 0%;
+    color: grey; }
+
+.update {
+  color: grey; }
+  .update i {
+    float: right;
+    margin: 0 auto;
+    padding: 0% !important; }
+  .update h6 {
+    float: right;
+    padding: 0% !important;
+    margin: 0 auto;
+    padding: 0% !important; }
+
+.analysis h6 {
+  padding: 0% !important;
+  margin: 0 auto;
+  color: grey; }
+.analysis span {
+  font-weight: bold; }
+
+.mdl-chip {
+  width: 100%;
+  padding: 0 !important;
+  height: 16px !important; }
+
+span.mdl-chip__contact.movie1Bar {
+  width: 54% !important;
+  padding: 0% !important;
+  margin: 0 !important;
+  height: inherit;
+  vertical-align: baseline; }
+
+span.mdl-chip__contact.movie2Bar {
+  width: 66%;
+  padding: 0% !important;
+  margin: 0% !important;
+  height: inherit;
+  vertical-align: baseline; }
+
+.movie {
+  clear: both; }
+  .movie .mdl-card {
+    min-height: auto; }
+  .movie h1 {
+    font-weight: 600; }
+  .movie h4, .movie button {
+    width: 0 auto;
+    width: 100%;
+    padding-bottom: 10%;
+    float: left; }
+  .movie button {
+    width: 70%;
+    background-color: #1d83c6 !important;
+    text-shadow: 1px 1px grey !important;
+    color: rgba(255, 255, 255, 0.9) !important; }
+
+.movieCard {
+  color: grey;
+  min-width: 300px !important;
+  margin: 0 auto; }
+  .movieCard h6 {
+    float: left;
+    padding: 0% !important;
+    padding-bottom: 5% !important;
+    vertical-align: baseline;
+    margin-bottom: 0% !important; }
+    .movieCard h6 i {
+      margin: 0 auto;
+      padding-right: 2%;
+      font-size: 1em;
+      vertical-align: middle; }
+    .movieCard h6 span {
+      font-weight: bold; }
+
+dialog {
+  overflow: hidden;
+  height: auto;
+  text-align: center; }
+  dialog form div {
+    padding-bottom: 15% !important; }
+  dialog form label {
+    font-size: 1.2em !important; }
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px; }
+
+.slideOut {
+  animation: slideOut;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  transition: 0.5s;
+  margin-left: 120% !important; }
+
+#twoBefore, #twoContentsBefore {
+  display: none; }
+
+.twoContentsAfter {
+  animation: dollarDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+.twoAfter {
+  display: block;
+  animation: slideDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards; }
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(-200px); }
+  100% {
+    transform: translateX(0px); } }
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%); }
+  10% {
+    transform: translateY(-75%); }
+  20% {
+    transform: translateY(-50%); }
+  30% {
+    transform: translateY(-25%); }
+  40% {
+    transform: translateY(-20%); }
+  45% {
+    transform: translateY(-10%); }
+  50% {
+    transform: translateY(-5%); }
+  55% {
+    transform: translateY(0%); }
+  60% {
+    transform: translateY(5%); }
+  70% {
+    transform: translateY(0%); }
+  80% {
+    transform: translateY(5%); }
+  90% {
+    transform: translateY(2%); }
+  100% {
+    transform: translateY(0%); } }
+@keyframes dollarDown {
+  0% {
+    transform: translateY(-50%); }
+  50% {
+    transform: translateY(10%); }
+  75% {
+    transform: translateY(5%); }
+  100% {
+    transform: translateY(10%); } }
+@media(min-width:600px) and (max-width:1297px) {
+  .salesStats {
+    clear: both; }
+
+  .salesTitles h4, .salesTitles h6 {
+    float: left;
+    width: 100%; } }
+@media(min-width: 500px) and (max-width:599px) {
+  .movie button {
+    width: 100%; }
+
+  .salesTitles h4, .salesTitles h6 {
+    float: left; } }
+@media(min-width:320px) and (max-width:499px) {
+  .update i, .update h6 {
+    float: left; }
+
+  .salesTitles h4 {
+    float: left; }
+
+  .movie h4, .movie button {
+    padding-bottom: 0%; }
+  .movie button {
+    width: 60%;
+    height: 50px; }
+
+  canvas {
+    height: 250px !important; } }
+
+/*# sourceMappingURL=main.css.map */

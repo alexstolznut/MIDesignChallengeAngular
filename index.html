@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
+<!--    <link rel="stylesheet" href="css/styles.css">-->
+   <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ng-dialog/1.4.0/css/ngDialog-theme-default.css">
@@ -63,6 +64,9 @@
                         <div class=" mdl-cell mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
                             <h1>{{ movie.title}}</h1>
                         </div>
+                        <div class=" mdl-cell mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
+                            <h6><span>Release Date</span><i class="material-icons">update</i>04 Jan 2015</h6>
+                        </div>
                         <div class="mdl-cell mdl-cell--4-col-tablet mdl-cell--6-col-desktop">
                             <h4>{{ movie.date1 | date }}</h4>
                         </div>
@@ -119,8 +123,8 @@
 
 <!--                </div>-->
                 <div class="mdl-dialog__actions">
-                    <button type="button" class="agree mdl-button" id="agree1" ng-disabled="{{salesForm.$invalid}}">Submit</button>
-                    <button type="button" class="close mdl-button" id="close1">Cancel</button>
+                    <button type="button" class="mdl-button" id="agree1">Submit</button>
+                    <button type="button" class="mdl-button" id="close1">Cancel</button>
                 </div>
             </section>
             <section id="twoBefore">
@@ -133,8 +137,8 @@
 
                 </div>
                 <div class="mdl-dialog__actions">
-                    <button type="button" class="agree mdl-button" id="agree2">Submit</button>
-                    <button type="button" class="close mdl-button" id="close2">Cancel</button>
+                    <button type="button" class="mdl-button" id="agree2">Submit</button>
+                    <button type="button" class="mdl-button" id="close2">Cancel</button>
                 </div>
             </section>
         </dialog>

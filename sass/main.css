@@ -1,0 +1,79 @@
+/* line 1, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+body {
+  margin: 0 auto; }
+
+/* line 4, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+.stats {
+  min-height: 300px; }
+
+/* line 7, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+canvas {
+  width: 100% !important;
+  height: 275px !important; }
+
+/* line 11, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+.salesTitles {
+  width: 100%; }
+  /* line 14, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+  .salesTitles h4 {
+    padding-top: 0% !important;
+    margin-top: 0% !important;
+    float: right;
+    font-weight: 400 !important;
+    color: grey; }
+  /* line 21, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+  .salesTitles h6 {
+    padding: 0% !important;
+    margin: 0% !important;
+    float: right;
+    color: grey; }
+    /* line 27, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+    .salesTitles h6 span {
+      font-weight: bold;
+      color: black;
+      opacity: .6;
+      padding: 0% !important;
+      margin: 0% !important; }
+
+/* line 35, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+.salesStats {
+  clear: both;
+  padding-top: 5%; }
+  /* line 39, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+  .salesStats h3 {
+    font-weight: 300;
+    color: grey;
+    line-height: 1em;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin: 0%;
+    margin-top: 15% !important; }
+  /* line 50, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+  .salesStats h6 {
+    padding: 0%;
+    margin: 0%;
+    color: grey; }
+
+/* line 56, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+.update i {
+  float: right;
+  margin: 0 auto;
+  padding: 0% !important; }
+
+/* line 60, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+.update h6 {
+  float: right;
+  padding: 0% !important;
+  margin: 0 auto;
+  padding: 0% !important; }
+
+/* line 67, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+.analysis h6 {
+  padding: 0% !important;
+  margin: 0 auto; }
+
+/* line 71, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+.meter {
+  clear: both; }
+
+/*# sourceMappingURL=main.css.map */
