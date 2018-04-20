@@ -175,8 +175,7 @@ img {
   -webkit-transition: .5s;
   -moz-transition: .5s;
   -ms-transition: .5s;
-  transition: .5s;
-  margin-left: 120% !important; }
+  transition: .5s; }
 
 /* line 159, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
 #twoBefore, #twoContentsBefore {
@@ -200,9 +199,9 @@ img {
 
 @keyframes slideOut {
   0% {
-    transform: translateX(-200px); }
+    transform: translateX(0px); }
   100% {
-    transform: translateX(0px); } }
+    transform: translateX(200px); } }
 
 @keyframes slideDown {
   0% {

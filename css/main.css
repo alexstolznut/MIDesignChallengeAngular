@@ -140,8 +140,7 @@ img {
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
-  transition: 0.5s;
-  margin-left: 120% !important; }
+  transition: 0.5s; }
 
 #twoBefore, #twoContentsBefore {
   display: none; }
@@ -162,9 +161,9 @@ img {
 
 @keyframes slideOut {
   0% {
-    transform: translateX(-200px); }
+    transform: translateX(0px); }
   100% {
-    transform: translateX(0px); } }
+    transform: translateX(200px); } }
 @keyframes slideDown {
   0% {
     transform: translateY(-100%); }
