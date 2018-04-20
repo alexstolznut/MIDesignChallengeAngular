@@ -90,12 +90,16 @@ span.mdl-chip__contact.movie2Bar {
   .movie .mdl-card {
     min-height: auto; }
   .movie h1 {
-    font-weight: 600; }
+    font-weight: 600;
+    margin: 0 auto; }
   .movie h4, .movie button {
     margin: 0 auto;
     width: 100%;
-    padding-bottom: 10%;
+    padding-bottom: 0%;
     float: left; }
+  .movie h6 {
+    padding: 0% !important;
+    margin: 0 auto; }
   .movie button {
     width: 70%;
     background-color: #1d83c6 !important;
@@ -109,9 +113,9 @@ span.mdl-chip__contact.movie2Bar {
   .movieCard h6 {
     float: left;
     padding: 0% !important;
-    padding-bottom: 5% !important;
+    padding-bottom: 0%;
     vertical-align: baseline;
-    margin-bottom: 0% !important; }
+    margin-bottom: 0%; }
     .movieCard h6 i {
       margin: 0 auto;
       padding-right: 2%;

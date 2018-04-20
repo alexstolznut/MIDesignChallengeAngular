@@ -114,62 +114,67 @@ span.mdl-chip__contact.movie2Bar {
     min-height: auto; }
   /* line 101, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
   .movie h1 {
-    font-weight: 600; }
-  /* line 104, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+    font-weight: 600;
+    margin: 0 auto; }
+  /* line 105, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
   .movie h4, .movie button {
     margin: 0 auto;
     width: 100%;
-    padding-bottom: 10%;
+    padding-bottom: 0%;
     float: left; }
-  /* line 109, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+  /* line 110, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+  .movie h6 {
+    padding: 0% !important;
+    margin: 0 auto; }
+  /* line 113, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
   .movie button {
     width: 70%;
     background-color: #1d83c6 !important;
     text-shadow: 1px 1px grey !important;
     color: rgba(255, 255, 255, 0.9) !important; }
 
-/* line 115, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+/* line 119, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
 .movieCard {
   color: grey;
   min-width: 300px !important;
   margin: 0 auto; }
-  /* line 119, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+  /* line 123, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
   .movieCard h6 {
     float: left;
     padding: 0% !important;
-    padding-bottom: 5% !important;
+    padding-bottom: 0%;
     vertical-align: baseline;
-    margin-bottom: 0% !important; }
-    /* line 126, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+    margin-bottom: 0%; }
+    /* line 130, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
     .movieCard h6 i {
       margin: 0 auto;
       padding-right: 2%;
       font-size: 1em;
       vertical-align: middle; }
-    /* line 131, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+    /* line 135, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
     .movieCard h6 span {
       font-weight: bold; }
 
-/* line 134, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+/* line 138, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
 dialog {
   overflow: hidden;
   height: auto;
   text-align: center; }
-  /* line 140, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+  /* line 144, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
   dialog form div {
     padding-bottom: 15% !important; }
-  /* line 142, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+  /* line 146, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
   dialog form label {
     font-size: 1.2em !important; }
 
-/* line 145, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+/* line 149, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
 img {
   display: block;
   margin: 0 auto;
   width: 100px;
   height: 100px; }
 
-/* line 151, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+/* line 155, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
 .slideOut {
   animation: slideOut;
   -webkit-transition: .5s;
@@ -177,11 +182,11 @@ img {
   -ms-transition: .5s;
   transition: .5s; }
 
-/* line 159, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+/* line 163, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
 #twoBefore, #twoContentsBefore {
   display: none; }
 
-/* line 162, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+/* line 166, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
 .twoContentsAfter {
   animation: dollarDown;
   animation-duration: 1s;
@@ -189,7 +194,7 @@ img {
   animation-iteration-count: 1;
   animation-fill-mode: forwards; }
 
-/* line 169, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+/* line 173, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
 .twoAfter {
   display: block;
   animation: slideDown;
@@ -242,37 +247,37 @@ img {
     transform: translateY(10%); } }
 
 @media (min-width: 600px) and (max-width: 1297px) {
-  /* line 223, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+  /* line 227, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
   .salesStats {
     clear: both; }
-  /* line 227, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+  /* line 231, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
   .salesTitles h4, .salesTitles h6 {
     float: left;
     width: 100%; } }
 
 @media (min-width: 500px) and (max-width: 599px) {
-  /* line 232, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+  /* line 236, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
   .movie button {
     width: 100%; }
-  /* line 236, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+  /* line 240, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
   .salesTitles h4, .salesTitles h6 {
     float: left; } }
 
 @media (min-width: 320px) and (max-width: 499px) {
-  /* line 241, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+  /* line 245, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
   .update i, .update h6 {
     float: left; }
-  /* line 243, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+  /* line 247, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
   .salesTitles h4 {
     float: left; }
-  /* line 247, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+  /* line 251, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
   .movie h4, .movie button {
     padding-bottom: 0%; }
-  /* line 249, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+  /* line 253, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
   .movie button {
     width: 60%;
     height: 50px; }
-  /* line 253, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
+  /* line 257, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
   canvas {
     height: 250px !important; } }
 
