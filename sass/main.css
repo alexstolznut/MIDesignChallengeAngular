@@ -128,7 +128,7 @@ span.mdl-chip__contact.movie2Bar {
     margin: 0 auto; }
   /* line 113, /Users/alexstolzoff/Desktop/Projects/MI-DesignChallenge/sass/main.sass */
   .movie button {
-    width: 70%;
+    width: 60%;
     background-color: #1d83c6 !important;
     text-shadow: 1px 1px grey !important;
     color: rgba(255, 255, 255, 0.9) !important; }
