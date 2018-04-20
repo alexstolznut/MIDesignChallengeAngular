@@ -92,7 +92,7 @@ span.mdl-chip__contact.movie2Bar {
   .movie h1 {
     font-weight: 600; }
   .movie h4, .movie button {
-    width: 0 auto;
+    margin: 0 auto;
     width: 100%;
     padding-bottom: 10%;
     float: left; }
