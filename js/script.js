@@ -22,13 +22,12 @@ var $ = function (id) {
 
         $scope.movies = [{
             title: "Movie 1",
-            date1: "May 3 2015",
-            date2: "May 4 2015",
+            date: [{date:"May 3 2015"},{date:"May 4 2015"}],
+            // date2: "May 4 2015",
             weekSales: "2,346"
       }, {
             title: "Movie 2",
-            date1: "May 3 2015",
-            date2: "May 4 2015",
+            date: [{date:"May 3 2015"},{date:"May 3 2015"}],
             weekSales: "4,422"
       }]
 
@@ -75,6 +74,7 @@ function appendChart() {
             scales: {
                 yAxes: [{
                     ticks: {
+                        suggestedMax: 70,
                         beginAtZero: false
                     }
             }]
@@ -123,10 +123,13 @@ function clearInputs(){
 
 function pullMovie(e) {
         var dialog = window.document.querySelector('dialog');
-        var x = e.currentTarget.parentElement.parentElement.children;
-        var y = x[0].textContent;
+        var x1 = e.currentTarget.parentElement.parentElement.parentElement.children;
+        var x2= e.currentTarget.parentElement.parentElement.children;
+        var y = x1[0].textContent + "-" +x2[0].textContent;
         window.console.log(y);
-        dialog.querySelector("h6").innerHTML = y
+        var h6 = dialog.querySelector("h6");
+        h6.innerHTML = y;
+        h6.style.fontSize = "1.5em";
         return y;
 
     }
