@@ -12,28 +12,6 @@ var $ = function (id) {
     return window.document.getElementById(id);
 };
 
-//ANGULAR APP CONTROLLER 
-(function () {
-    var app = angular.module('dataDashApp', []);
-
-
-
-    app.controller('dataDashController', function ($scope) {
-
-        $scope.movies = [{
-            title: "Movie 1",
-            date: [{date:"May 3 2015"},{date:"May 4 2015"}],
-            // date2: "May 4 2015",
-            weekSales: "2,346"
-      }, {
-            title: "Movie 2",
-            date: [{date:"May 3 2015"},{date:"May 3 2015"}],
-            weekSales: "4,422"
-      }]
-
-
-    })
-})();
 
 //CHARTS JS 
 function appendChart() {
