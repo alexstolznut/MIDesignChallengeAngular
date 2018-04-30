@@ -1,19 +1,25 @@
+/* line 7, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 body {
   margin: 0 auto; }
 
+/* line 11, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 .header-text__h2 {
   margin: 0 auto; }
 
+/* line 15, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 .header-text__h2, .header-text__h4 {
   color: grey; }
 
+/* line 19, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 canvas {
   width: 100% !important;
   height: 275px !important; }
 
+/* line 24, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 .movie-sales-header {
   width: 100%; }
 
+/* line 28, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 .movie-sales-header__h4 {
   padding-top: 0% !important;
   margin-top: 0% !important;
@@ -21,12 +27,14 @@ canvas {
   font-weight: 400 !important;
   color: grey; }
 
+/* line 36, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 .movie-sales-header__h6 {
   padding: 0% !important;
   margin: 0% !important;
   float: right;
   color: grey; }
 
+/* line 43, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 .movie-sales-header__span {
   font-weight: bold;
   color: black;
@@ -34,10 +42,12 @@ canvas {
   padding: 0% !important;
   margin: 0% !important; }
 
+/* line 51, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 .movie-sales-progress-bars {
   clear: both;
   padding-top: 5%; }
 
+/* line 56, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 .movie-sales-progress-bars__h3 {
   font-weight: 300;
   color: grey;
@@ -46,43 +56,53 @@ canvas {
   padding-bottom: 5%;
   margin: 0%; }
 
+/* line 65, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 .movie-sales-progress-bars__h3-secondary {
   margin-top: 15%; }
 
+/* line 69, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 .movie-sales-progress-bars__h6 {
   padding: 0%;
   margin: 0%;
   color: grey; }
 
+/* line 75, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 .movie-sales-footer-text {
   color: grey; }
 
+/* line 79, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 .movie-sales-footer-text__h6 {
   padding: 0%;
   margin: 0 auto;
   color: grey; }
+  /* line 84, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
   .movie-sales-footer-text__h6 span {
     font-weight: bold; }
 
+/* line 89, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 .movies-sales-footer-text__span {
   font-weight: bold; }
 
+/* line 93, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 .movie-sales-footer-text__icon {
   float: right;
   margin: 0 auto;
   padding: 0%; }
 
+/* line 99, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 .movie-sales-footer-text__h6--secondary {
   float: right;
   padding: 0%;
   margin: 0 auto;
   padding: 0%; }
 
+/* line 106, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 .mdl-chip {
   width: 100%;
   padding: 0 !important;
   height: 16px !important; }
 
+/* line 112, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 span.mdl-chip__contact.progress-bar-one {
   width: 54% !important;
   padding: 0% !important;
@@ -90,6 +110,7 @@ span.mdl-chip__contact.progress-bar-one {
   height: inherit;
   vertical-align: baseline; }
 
+/* line 120, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 span.mdl-chip__contact.progress-bar-two {
   width: 66%;
   padding: 0% !important;
@@ -97,22 +118,27 @@ span.mdl-chip__contact.progress-bar-two {
   height: inherit;
   vertical-align: baseline; }
 
+/* line 128, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 .movie-container {
   clear: both;
   margin: 0 auto; }
+  /* line 132, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
   .movie-container .mdl-card {
     min-height: auto; }
 
+/* line 137, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 .movie-card__h1 {
   font-weight: 600;
   margin: 0 auto; }
 
+/* line 142, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 .movie-card__h4, .movie-card__button {
   margin: 0 auto;
   width: 100%;
   padding-bottom: 0%;
   clear: both; }
 
+/* line 149, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 .movie-card__h6 {
   padding: 0%;
   margin: 0 auto;
@@ -120,6 +146,7 @@ span.mdl-chip__contact.progress-bar-two {
   padding-bottom: 0%;
   vertical-align: baseline; }
 
+/* line 157, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 .movie-card__button {
   width: 75%;
   height: 120%;
@@ -127,31 +154,38 @@ span.mdl-chip__contact.progress-bar-two {
   text-shadow: 1px 1px grey;
   color: rgba(255, 255, 255, 0.9); }
 
+/* line 165, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 .movie-card__icon {
   margin: 0 auto;
   padding-right: 2%;
   font-size: 1em;
   vertical-align: middle; }
 
+/* line 172, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 .movie-card {
   color: grey;
   span-font-weight: bold; }
 
+/* line 179, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 dialog {
   overflow: hidden;
   height: auto;
   text-align: center; }
+  /* line 185, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
   dialog form div {
     padding-bottom: 15% !important; }
+  /* line 189, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
   dialog form label {
     font-size: 1.2em !important; }
 
+/* line 195, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 img {
   display: block;
   margin: 0 auto;
   width: 100px;
   height: 100px; }
 
+/* line 202, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 .slideOut {
   animation: slideOut;
   -webkit-transition: 0.5s;
@@ -159,9 +193,11 @@ img {
   -ms-transition: 0.5s;
   transition: 0.5s; }
 
+/* line 212, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 #twoBefore, #twoContentsBefore {
   display: none; }
 
+/* line 216, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 .twoContentsAfter {
   animation: dollarDown;
   animation-duration: 1s;
@@ -169,6 +205,7 @@ img {
   animation-iteration-count: 1;
   animation-fill-mode: forwards; }
 
+/* line 224, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
 .twoAfter {
   display: block;
   animation: slideDown;
@@ -181,6 +218,7 @@ img {
     transform: translateX(0px); }
   100% {
     transform: translateX(200px); } }
+
 @keyframes slideDown {
   0% {
     transform: translateY(-100%); }
@@ -208,6 +246,7 @@ img {
     transform: translateY(2%); }
   100% {
     transform: translateY(0%); } }
+
 @keyframes dollarDown {
   0% {
     transform: translateY(-50%); }
@@ -217,34 +256,40 @@ img {
     transform: translateY(5%); }
   100% {
     transform: translateY(10%); } }
-@media(min-width:600px) and (max-width:1297px) {
+
+@media (min-width: 600px) and (max-width: 1297px) {
+  /* line 315, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
   .movie-sales-progress-bars {
     clear: both; }
-
+  /* line 319, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
   .movie-sales-header__h4, .movie-sales-header__h6 {
     float: left;
     width: 100%; } }
-@media(min-width: 500px) and (max-width:599px) {
+
+@media (min-width: 500px) and (max-width: 599px) {
+  /* line 326, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
   .movie-card__button {
     width: 100%; }
-
+  /* line 330, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
   .movie-sales-footer-text {
     width: 100%;
     float: left; } }
-@media(min-width:320px) and (max-width:499px) {
+
+@media (min-width: 320px) and (max-width: 499px) {
+  /* line 337, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
   .movie-sales-footer-text__icon, .movie-sales-footer-text__h6--secondary {
     float: left; }
-
+  /* line 341, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
   .movie-sales-header__h4 {
     float: left; }
-
+  /* line 345, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
   .movie-card__h4, .movie-card__butoon {
     padding-bottom: 0%; }
-
+  /* line 349, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
   .movie-card__button {
     width: 60%;
     height: 50px; }
-
+  /* line 354, /Users/alexstolzoff/Documents/GitHub/TestMI/css/main.scss */
   canvas {
     height: 250px !important; } }
 
