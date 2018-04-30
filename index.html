@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--    <link rel="stylesheet" href="css/styles.css">-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ng-dialog/1.4.0/css/ngDialog-theme-default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.4.9/dialog-polyfill.css">
+       <link rel="stylesheet" href="css/main.css">
+    <script src="bower_components/angular/angular.js"></script>
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>-->
+    <script src="app.module.js"></script>
+    <script src="movie-card/movie-card.module.js"></script>
+    <script src="movie-card/movie-card.component.js"></script>
+    <script src="12-Col-Card/12-Col-Card.module.js"></script>
+    <script src="12-Col-Card/12-Col-Card.component.js"></script>
+</head>
+
+<body ng-app="movieApp" ng-cloak>
+        <div class="stats mdl-grid">
+               <Twelve-Col-Card>
+               </Twelve-Col-Card>
+
+            </div>
+
+      <movie-card class="mdl-cell mdl-cell--12-col"></movie-card>
+
+      
+
+        <dialog class="mdl-dialog">
+            <section id="oneBefore">
+                <h6 class="mdl-dialog__title">Movie</h6>
+                <div class="mdl-dialog__content">
+
+                    <form name="myForm">
+                        <div class="mdl-textfield mdl-js-textfield mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                            <input class="mdl-textfield__input" type="text" id="firstName" pattern="[A-Z, a-z, ]*">
+                            <label class="mdl-textfield__label" for="firstName">First Name</label>
+                            <span class="mdl-textfield__error">Please enter a valid name</span>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-cell--6-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                            <input class="mdl-textfield__input" type="text" id="lastName" pattern="[A-Z, a-z, ]*" >
+                            <label class="mdl-textfield__label" for="lastName">Last Name</label>
+                            <span class="mdl-textfield__error">Please enter a valid name</span>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-cell--12-col-phone">
+                            <input class="mdl-textfield__input" type="text" id="numberTickets" pattern="[0-9]{1,2}" >
+                            <label class="mdl-textfield__label" for="numberTickets">Number of tickets</label>
+                            <span class="mdl-textfield__error">Please enter a number between 1 and 99</span>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-cell--12-col-phone">
+                            <input class="mdl-textfield__input" type="number" id="credit" pattern="">
+                            <label class="mdl-textfield__label" for="credit">Card Number</label>
+                            <span class="mdl-textfield__error">Please enter a valid credit card number</span>
+                        </div>
+                         <div class="mdl-textfield mdl-js-textfield mdl-cell--12-col-phone">
+                            <input class="mdl-textfield__input" type="number" id="cvv" pattern="/^[0-9]{3,4}$/">
+                            <label class="mdl-textfield__label" for="credit">CVV</label>
+                            <span class="mdl-textfield__error">Please enter a valid CVV</span>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-cell--12-col-phone">
+                            <input class="mdl-textfield__input" type="month" id="credit" pattern="">
+                            <label class="mdl-textfield__label" for="credit">Expiration Date</label>
+                            <span class="mdl-textfield__error">Please enter a valid credit card number</span>
+                        </div>
+
+
+                    </form>
+
+
+                </div>
+                <div class="mdl-dialog__actions">
+                    <button type="button" class="mdl-button" id="agree1">Submit</button>
+                    <button type="button" class="mdl-button" id="close1">Cancel</button>
+                </div>
+            </section>
+            <section id="twoBefore">
+                <h6 class="mdl-dialog__title"></h6>
+                <div class="mdl-dialog__content" id="twoContentsBefore">
+                    <img src="img/download.png">
+                    <p>Thank your for your purchase {{firstName}}</p>
+
+
+
+                </div>
+                <div class="mdl-dialog__actions">
+                    <button type="button" class="mdl-button" id="agree2">Submit</button>
+                    <button type="button" class="mdl-button" id="close2">Cancel</button>
+                </div>
+            </section>
+        </dialog>
+
+
+
+
+<!--    </div>-->
+<!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>-->
+<!--    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>-->
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.4.2/dialog-polyfill.min.js"></script>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+<!--    <script src="/node_modules/material-design-lite/material.min.js"></script>-->
+<script src="js/script.js"></script>
+
+</body>
+
+
+</html>

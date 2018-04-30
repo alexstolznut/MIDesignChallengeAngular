@@ -1,0 +1,357 @@
+$main-text-grey: grey;
+
+$buy-ticket-button-color: #1d83c6;
+
+$color: red;
+
+body {
+  margin: 0 auto;
+}
+
+.header-text__h2 {
+  margin: 0 auto;
+}
+
+.header-text__h2, .header-text__h4 {
+  color: $main-text-grey;
+}
+
+canvas {
+  width: 100% !important;
+  height: 275px !important;
+}
+
+.movie-sales-header {
+  width: 100%;
+}
+
+.movie-sales-header__h4 {
+  padding-top: 0% !important;
+  margin-top: 0% !important;
+  float: right;
+  font-weight: 400 !important;
+  color: $main-text-grey;
+}
+
+.movie-sales-header__h6 {
+  padding: 0% !important;
+  margin: 0% !important;
+  float: right;
+  color: $main-text-grey;
+}
+
+.movie-sales-header__span {
+  font-weight: bold;
+  color: black;
+  opacity: 0.6;
+  padding: 0% !important;
+  margin: 0% !important;
+}
+
+.movie-sales-progress-bars {
+  clear: both;
+  padding-top: 5%;
+}
+
+.movie-sales-progress-bars__h3 {
+  font-weight: 300;
+  color: $main-text-grey;
+  line-height: 1em;
+  padding-top: 0%;
+  padding-bottom: 5%;
+  margin: 0%;
+}
+
+.movie-sales-progress-bars__h3-secondary {
+  margin-top: 15%;
+}
+
+.movie-sales-progress-bars__h6 {
+  padding: 0%;
+  margin: 0%;
+  color: $main-text-grey;
+}
+
+.movie-sales-footer-text {
+  color: $main-text-grey;
+}
+
+.movie-sales-footer-text__h6 {
+  padding: 0%;
+  margin: 0 auto;
+  color: $main-text-grey;
+
+  span {
+    font-weight: bold;
+  }
+}
+
+.movies-sales-footer-text__span {
+  font-weight: bold;
+}
+
+.movie-sales-footer-text__icon {
+  float: right;
+  margin: 0 auto;
+  padding: 0%;
+}
+
+.movie-sales-footer-text__h6--secondary {
+  float: right;
+  padding: 0%;
+  margin: 0 auto;
+  padding: 0%;
+}
+
+.mdl-chip {
+  width: 100%;
+  padding: 0 !important;
+  height: 16px !important;
+}
+
+span.mdl-chip__contact.progress-bar-one {
+  width: 54% !important;
+  padding: 0% !important;
+  margin: 0 !important;
+  height: inherit;
+  vertical-align: baseline;
+}
+
+span.mdl-chip__contact.progress-bar-two {
+  width: 66%;
+  padding: 0% !important;
+  margin: 0% !important;
+  height: inherit;
+  vertical-align: baseline;
+}
+
+.movie-container {
+  clear: both;
+  margin: 0 auto;
+
+  .mdl-card {
+    min-height: auto;
+  }
+}
+
+.movie-card__h1 {
+  font-weight: 600;
+  margin: 0 auto;
+}
+
+.movie-card__h4, .movie-card__button {
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 0%;
+  clear: both;
+}
+
+.movie-card__h6 {
+  padding: 0%;
+  margin: 0 auto;
+  float: left;
+  padding-bottom: 0%;
+  vertical-align: baseline;
+}
+
+.movie-card__button {
+  width: 75%;
+  height: 120%;
+  background-color: $buy-ticket-button-color !important;
+  text-shadow: 1px 1px grey;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.movie-card__icon {
+  margin: 0 auto;
+  padding-right: 2%;
+  font-size: 1em;
+  vertical-align: middle;
+}
+
+.movie-card {
+  color: $main-text-grey;
+  span: {
+    font-weight: bold;
+  };
+}
+
+dialog {
+  overflow: hidden;
+  height: auto;
+  text-align: center;
+
+  form {
+    div {
+      padding-bottom: 15% !important;
+    }
+
+    label {
+      font-size: 1.2em !important;
+    }
+  }
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
+
+.slideOut {
+  animation: slideOut;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  transition: 0.5s;
+}
+
+//
+
+#twoBefore, #twoContentsBefore {
+  display: none;
+}
+
+.twoContentsAfter {
+  animation: dollarDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.twoAfter {
+  display: block;
+  animation: slideDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(200px);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  10% {
+    transform: translateY(-75%);
+  }
+
+  20% {
+    transform: translateY(-50%);
+  }
+
+  30% {
+    transform: translateY(-25%);
+  }
+
+  40% {
+    transform: translateY(-20%);
+  }
+
+  45% {
+    transform: translateY(-10%);
+  }
+
+  50% {
+    transform: translateY(-5%);
+  }
+
+  55% {
+    transform: translateY(0%);
+  }
+
+  60% {
+    transform: translateY(5%);
+  }
+
+  70% {
+    transform: translateY(0%);
+  }
+
+  80% {
+    transform: translateY(5%);
+  }
+
+  90% {
+    transform: translateY(2%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes dollarDown {
+  0% {
+    transform: translateY(-50%);
+  }
+
+  50% {
+    transform: translateY(10%);
+  }
+
+  75% {
+    transform: translateY(5%);
+  }
+
+  100% {
+    transform: translateY(10%);
+  }
+}
+
+@media(min-width:600px) and (max-width:1297px) {
+  .movie-sales-progress-bars {
+    clear: both;
+  }
+
+  .movie-sales-header__h4, .movie-sales-header__h6 {
+    float: left;
+    width: 100%;
+  }
+}
+
+@media(min-width: 500px) and (max-width:599px) {
+  .movie-card__button {
+    width: 100%;
+  }
+
+  .movie-sales-footer-text {
+    width: 100%;
+    float: left;
+  }
+}
+
+@media(min-width:320px) and (max-width:499px) {
+  .movie-sales-footer-text__icon, .movie-sales-footer-text__h6--secondary {
+    float: left;
+  }
+
+  .movie-sales-header__h4 {
+    float: left;
+  }
+
+  .movie-card__h4, .movie-card__butoon {
+    padding-bottom: 0%;
+  }
+
+  .movie-card__button {
+    width: 60%;
+    height: 50px;
+  }
+
+  canvas {
+    height: 250px !important;
+  }
+}
